@@ -1,0 +1,170 @@
+/* @import "tailwindcss"; */
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/src/assets/fonts/Montserrat-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/src/assets/fonts/Montserrat-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --primary: #6847c0;
+  --onPrimary: #ffffff;
+  --primaryContainer: #e8ddff;
+  --onPrimaryContainer: #21005d;
+  --secondary: #615b71;
+  --onSecondary: #ffffff;
+  --secondaryContainer: #e8def8;
+  --onSecondaryContainer: #1d192b;
+  --tertiary: #7d5260;
+  --onTertiary: #ffffff;
+  --tertiaryContainer: #ffd9e3;
+  --onTertiaryContainer: #31101d;
+  --error: #ba1a1a;
+  --onError: #ffffff;
+  --errorContainer: #ffdada;
+  --onErrorContainer: #410002;
+  --background: #fffbff;
+  --onBackground: #1c1b1e;
+  --surface: #fffbff;
+  --onSurface: #1c1b1e;
+  --surfaceVariant: #e6e0ec;
+  --onSurfaceVariant: #48454e;
+  --outline: #79757f;
+  --outlineVariant: #cac4cf;
+  --shadow: #000000;
+  --scrim: #000000;
+  --inverseSurface: #312f33;
+  --inverseOnSurface: #f4eff4;
+  --inversePrimary: #cebdff;
+  --surfaceDisabled: rgba(28, 27, 30, 0.12);
+  --onSurfaceDisabled: rgba(28, 27, 30, 0.38);
+  --backdrop: rgba(50, 47, 56, 0.4);
+}
+
+/* Dark mode */
+.dark {
+  --primary: #cebdff;
+  --onPrimary: #390590;
+  --primaryContainer: #502ba7;
+  --onPrimaryContainer: #e8ddff;
+  --secondary: #cbc3dc;
+  --onSecondary: #332d41;
+  --secondaryContainer: #494458;
+  --onSecondaryContainer: #e8def8;
+  --tertiary: #efb8c9;
+  --onTertiary: #492532;
+  --tertiaryContainer: #633b49;
+  --onTertiaryContainer: #ffd9e3;
+  --error: #ffb4ab;
+  --onError: #690005;
+  --errorContainer: #93000a;
+  --onErrorContainer: #ffb4ab;
+  --background: #1c1b1e;
+  --onBackground: #e6e1e6;
+  --surface: #1c1b1e;
+  --onSurface: #e6e1e6;
+  --surfaceVariant: #48454e;
+  --onSurfaceVariant: #cac4cf;
+  --outline: #948f99;
+  --outlineVariant: #48454e;
+  --shadow: #000000;
+  --scrim: #000000;
+  --inverseSurface: #e6e1e6;
+  --inverseOnSurface: #312f33;
+  --inversePrimary: #6847c0;
+  --surfaceDisabled: rgba(230, 225, 230, 0.12);
+  --onSurfaceDisabled: rgba(230, 225, 230, 0.38);
+  --backdrop: rgba(50, 47, 56, 0.4);
+}
+
+body {
+  font-family: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+}
+
+/* Animaciones personalizadas */
+@keyframes fade-in-up {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes slide-in {
+  0% {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes bounce-short {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+@keyframes list-fade-in {
+  0% {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.8s cubic-bezier(0.4,0,0.2,1) both;
+}
+.animate-fade-in {
+  animation: fade-in 1s cubic-bezier(0.4,0,0.2,1) both;
+}
+.animate-slide-in {
+  animation: slide-in 0.8s cubic-bezier(0.4,0,0.2,1) both;
+}
+.animate-bounce-short {
+  animation: bounce-short 1.2s 1 both;
+}
+.animate-list-fade-in {
+  animation: list-fade-in 0.7s cubic-bezier(0.4,0,0.2,1) both;
+}
+
+/* Retrasos para animaciones */
+.delay-100 { animation-delay: 0.1s; }
+.delay-200 { animation-delay: 0.2s; }
+.delay-300 { animation-delay: 0.3s; }
+.delay-400 { animation-delay: 0.4s; }
+.delay-500 { animation-delay: 0.5s; }
+.delay-700 { animation-delay: 0.7s; }
+.delay-900 { animation-delay: 0.9s; }
+
+/* Utilidad para xs breakpoint */
+@media (max-width: 400px) {
+  .xs\:text-4xl { font-size: 2.25rem; }
+  .xs\:text-xl { font-size: 1.125rem; }
+}
