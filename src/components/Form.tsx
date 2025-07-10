@@ -83,7 +83,7 @@ export default function Form() {
         className="mt-12 sm:mt-20 max-w-lg w-full mx-auto animate-fade-in-up delay-700 relative z-10 px-2 sm:px-4"
       >
         <h2 className="text-2xl sm:text-3xl font-bold mb-6 text-[var(--primary)] text-center">
-          Reserva tu lugar
+          Para ser notificado cuando abramos la fase beta llena el siguiente formulario
         </h2>
         <form
           className="flex flex-col gap-4 bg-[var(--primaryContainer)]/80 dark:bg-[var(--primaryContainer)]/30 rounded-xl shadow-lg p-4 sm:p-8 border border-[var(--outlineVariant)]"
