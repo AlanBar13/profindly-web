@@ -3,10 +3,13 @@ import Layout from '../layouts/Layout.astro';
 import LandingHero from '../components/LandingHero.astro';
 import Purpose from '../components/Purpose.astro';
 import Benefits from '../components/Benefits.astro';
+
+import Form from '../components/Form';
 ---
 
 <Layout>
 	<LandingHero />
 	<Purpose />
 	<Benefits />
+	<Form client:load />
 </Layout>
