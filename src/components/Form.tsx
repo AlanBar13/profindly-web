@@ -165,7 +165,7 @@ export default function Form() {
             <button
               className="bg-[var(--primary)] text-[var(--onPrimary)] px-4 py-3 sm:px-5 rounded font-semibold hover:bg-[var(--primaryContainer)] hover:text-[var(--onPrimaryContainer)] w-full transition-colors duration-200 shadow-md animate-bounce-short text-base sm:text-lg mt-2"
             >
-              Quiero participar
+              Registrarme
             </button>
           )}
         </form>

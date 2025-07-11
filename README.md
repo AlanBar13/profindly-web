@@ -1,52 +1,88 @@
-# Astro Starter Kit: Basics
 
-```sh
-pnpm create astro@latest -- --template basics
-```
+# Profindly Landing Page
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+Landing page for Profindly, a platform that connects patients with verified health specialists in Mexico. Built with Astro, React, and Tailwind CSS.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## 🚀 Features
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+- Responsive design for desktop and mobile
+- Styled navigation bar with logo and links
+- Animated hero, benefits, and purpose sections
+- Registration form for specialists with validation and toast notifications
+- SEO optimized (Open Graph, Twitter Card, keywords, etc.)
+- Vercel Analytics integration
 
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
+## � Project Structure
 
 ```text
 /
 ├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
-└── package.json
+│   ├── favicon.svg
+│   ├── logo.ico
+│   └── logo.png
+├── src/
+│   ├── assets/
+│   │   ├── astro.svg
+│   │   ├── background.svg
+│   │   └── fonts/
+│   │       ├── Montserrat-Bold.woff2
+│   │       ├── Montserrat-Regular.woff2
+│   │       └── Montserrat-SemiBold.woff2
+│   ├── components/
+│   │   ├── Benefits.astro
+│   │   ├── Form.tsx
+│   │   ├── LandingHero.astro
+│   │   ├── Navbar.astro
+│   │   ├── Purpose.astro
+│   │   └── Toast.tsx
+│   ├── layouts/
+│   │   └── Layout.astro
+│   ├── pages/
+│   │   ├── index.astro
+│   │   └── api/
+│   │       └── create-lead.ts
+│   ├── services/
+│   │   └── supabase.ts
+│   └── styles/
+│       └── global.css
+├── package.json
+├── astro.config.mjs
+├── tsconfig.json
+└── pnpm-lock.yaml
 ```
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+## 🧑‍💻 Local Development
 
-## 🧞 Commands
+Install dependencies and start the dev server:
 
-All commands are run from the root of the project, from a terminal:
+```sh
+pnpm install
+pnpm dev
+```
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `pnpm install`             | Installs dependencies                            |
-| `pnpm dev`             | Starts local dev server at `localhost:4321`      |
-| `pnpm build`           | Build your production site to `./dist/`          |
-| `pnpm preview`         | Preview your build locally, before deploying     |
-| `pnpm astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `pnpm astro -- --help` | Get help using the Astro CLI                     |
+Visit [http://localhost:4321](http://localhost:4321) to view the site.
 
-## 👀 Want to learn more?
+## 🛠️ Build & Deploy
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+To build for production:
+
+```sh
+pnpm build
+```
+
+Preview the production build locally:
+
+```sh
+pnpm preview
+```
+
+Deploy to Vercel or your preferred static hosting provider. All static assets (images, icons) must be in the `public/` folder to be served correctly.
+
+## 🌐 SEO & Best Practices
+
+- All meta tags and Open Graph/Twitter tags are set in `Layout.astro`.
+- Favicon and logo are referenced from the `public/` folder.
+- Uses Montserrat font for branding.
+
+---
+Made with ❤️ by the Profindly team.
