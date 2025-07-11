@@ -1,7 +1,7 @@
 
-# Profindly Landing Page
+# NexoMedics Landing Page
 
-Landing page for Profindly, a platform that connects patients with verified health specialists in Mexico. Built with Astro, React, and Tailwind CSS.
+Landing page for NexoMedics, a platform that connects patients with verified health specialists in Mexico. Built with Astro, React, and Tailwind CSS.
 
 ## 🚀 Features
 
@@ -85,4 +85,4 @@ Deploy to Vercel or your preferred static hosting provider. All static assets (i
 - Uses Montserrat font for branding.
 
 ---
-Made with ❤️ by the Profindly team.
+Made with ❤️ by the NexoMedics team.
